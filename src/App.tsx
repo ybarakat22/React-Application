@@ -1,15 +1,11 @@
-import React from 'react';
+import React from "react";
 import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
 
 function App() {
-  let items = ["China", "Us", "Japan", "Egypt", "France"];
-  const handleSelectItem = (item:string)=>{
-    console.log(item)
-  }
-
   return (
     <div>
-      <ListGroup items={items} heading='Countries' onSelectItem={handleSelectItem}/>
+      <Alert>Hello <span>World</span></Alert>
     </div>
   );
 }
