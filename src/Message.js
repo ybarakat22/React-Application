@@ -4,9 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
-const Message_1 = __importDefault(require("./Message"));
-function App() {
-    return (react_1.default.createElement("div", null,
-        react_1.default.createElement(Message_1.default, null)));
+function Message() {
+    return react_1.default.createElement("h1", null, "Hello World");
 }
-exports.default = App;
+exports.default = Message;
