@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const react_dom_1 = __importDefault(require("react-dom"));
-require("./index.css");
+require("bootstrap/dist/css/bootstrap.css");
 const App_1 = __importDefault(require("./App"));
 const reportWebVitals_1 = __importDefault(require("./reportWebVitals"));
 react_dom_1.default.render(react_1.default.createElement(react_1.default.StrictMode, null,
