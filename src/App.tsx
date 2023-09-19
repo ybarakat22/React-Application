@@ -1,14 +1,13 @@
 import React from "react";
-import ListGroup from "./components/ListGroup";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
+import Todo from "./components/Todo";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
     <div>
-      <Button color='danger' onClick={()=>console.log('Button clicked')}>
-        Enter
-      </Button>
+      <h1>My Todos</h1>
+      <Todo text="Learn React" />
+      <Todo text="Master React" />
     </div>
   );
 }

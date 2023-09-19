@@ -4,9 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
-const Button_1 = __importDefault(require("./components/Button"));
+const Todo_1 = __importDefault(require("./components/Todo"));
+require("bootstrap/dist/css/bootstrap.css");
 function App() {
     return (react_1.default.createElement("div", null,
-        react_1.default.createElement(Button_1.default, { color: 'danger', onClick: () => console.log('Button clicked') }, "Enter")));
+        react_1.default.createElement("h1", null, "My Todos"),
+        react_1.default.createElement(Todo_1.default, { text: "Learn React" }),
+        react_1.default.createElement(Todo_1.default, { text: "Master React" })));
 }
 exports.default = App;
