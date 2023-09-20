@@ -1,10 +1,7 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
+const jsx_runtime_1 = require("react/jsx-runtime");
 const Button = ({ children, color, onClick }) => {
-    return (react_1.default.createElement("button", { type: "button", className: "btn btn-" + color, onClick: onClick }, children));
+    return ((0, jsx_runtime_1.jsx)("button", Object.assign({ type: "button", className: "btn btn-" + color, onClick: onClick }, { children: children }), void 0));
 };
 exports.default = Button;

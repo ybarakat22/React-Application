@@ -1,9 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
+const jsx_runtime_1 = require("react/jsx-runtime");
 function Modal(props) {
     function cancelHandler() {
         props.onCancel();
@@ -11,9 +8,6 @@ function Modal(props) {
     function confirmHandler() {
         props.onConfirm();
     }
-    return (react_1.default.createElement("div", null,
-        react_1.default.createElement("p", null, "Are you sure?"),
-        react_1.default.createElement("button", { className: "btn btn-danger", onClick: cancelHandler }, "Cancel"),
-        react_1.default.createElement("button", { className: "btn btn-primary", onClick: confirmHandler }, "Confirm")));
+    return ((0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("p", { children: "Are you sure?" }, void 0), (0, jsx_runtime_1.jsx)("button", Object.assign({ className: "btn btn-danger", onClick: cancelHandler }, { children: "Cancel" }), void 0), (0, jsx_runtime_1.jsx)("button", Object.assign({ className: "btn btn-primary", onClick: confirmHandler }, { children: "Confirm" }), void 0)] }, void 0));
 }
 exports.default = Modal;
